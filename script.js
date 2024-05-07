@@ -1,8 +1,9 @@
 const teamMembers = [
     {
-        name: 'Lionel Messi',
-        position: 'foward',
+        name: 'Hope Solo',
+        position: 'goalie',
         skills: ['dribbiling', 'shooting', 'passing'],
+        strengths: 'ball control',
         weaknesses: 'heading ability',
         biography: 'bllllahhh',
     },
@@ -11,9 +12,19 @@ const teamMembers = [
         name: 'Lionel Messi jr',
         position: 'midfielder',
         skills: ['dribbiling', 'shooting', 'passing'],
+        strengths: 'ball control',
         weaknesses: 'heading ability',
         biography: 'bllllahhh',
-    }
+    },
+
+    {
+        name: 'help please',
+        position: 'goalie',
+        skills: ['dribbiling', 'shooting', 'passing'],
+        strengths: 'ball control',
+        weaknesses: 'heading ability',
+        biography: 'bllllahhh',
+    },
 
 ]
 function generateTeamCards() {
@@ -22,11 +33,32 @@ function generateTeamCards() {
         const card = document.createElement('div')
         card.classList.add('col-md-4')
 
+        // styling card based on positon
+let backgroundColor
+
+if(member.position === 'forward') {
+    backgroundColor = 'pink'
+} else if(member.position === 'midfielder') {
+    backgroundColor = 'blue'
+} else if(member.position === 'goalie') {
+    backgroundColor = 'purple' }
+
+
+card.style.backgroundColor = backgroundColor
+
+
+
+
+
+
+
+
+
 // create a list of skils with <li> tags
 
 const skillsList = member.skills.map(skill => `<li> ${skill} </li>`).join('')
         card.innerHTML = `
-            <div class = "card">
+            <div class = "card m-4">
                 <div class = "card-header"> ${member.name} </div>
                 <div class = "card-body">
                     <p><strong>Position:</strong> ${member.position}</p>
