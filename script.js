@@ -10,7 +10,7 @@ const teamMembers = [
     },
 
     {
-        img: 'imgs/horan.jpg',
+        img: 'imgs/ertz.jpg',
         name: 'Julie Ertz',
         position: 'defender',
         skills: ['dribbiling', 'shooting', 'passing'],
@@ -47,6 +47,7 @@ const teamMembers = [
         biography: 'bllllahhh',
     },
     {
+        img: 'imgs/horan.jpeg',
         name: 'Lindsey Horan',
         position: 'midfielder',
         skills: ['dribbiling', 'shooting', 'passing'],
@@ -55,6 +56,7 @@ const teamMembers = [
         biography: 'bllllahhh',
     },
     {
+        img: 'imgs/rose.jpeg',
         name: 'Rose Lavelle',
         position: 'midfielder',
         skills: ['dribbiling', 'shooting', 'passing'],
@@ -63,6 +65,7 @@ const teamMembers = [
         biography: 'bllllahhh',
     },
     {
+        img: 'imgs/emily.jpeg',
         name: 'Emily Sonnet',
         position: 'midfielder',
         skills: ['dribbiling', 'shooting', 'passing'],
@@ -71,6 +74,7 @@ const teamMembers = [
         biography: 'bllllahhh',
     },
     {
+        img: 'imgs/smith.jpeg',
         name: 'Sophia Smith',
         position: 'forward',
         skills: ['dribbiling', 'shooting', 'passing'],
@@ -79,6 +83,7 @@ const teamMembers = [
         biography: 'bllllahhh',
     },
     {
+        img: 'imgs/alex.jpeg',
         name: 'Alex Morgan',
         position: 'forward',
         skills: ['dribbiling', 'shooting', 'passing'],
@@ -87,6 +92,7 @@ const teamMembers = [
         biography: 'bllllahhh',
     },
     {
+        img: 'imgs/rodman.jpeg',
         name: 'Trinity Rodman',
         position: 'forward',
         skills: ['dribbiling', 'shooting', 'passing'],
