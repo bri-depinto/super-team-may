@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+.card{
+    background-color: rgb(197, 197, 197);
+}
+.card-header{
+color: rgb(255, 255, 255);
+background-color: black;
+border: dotted 5px;
+
+}

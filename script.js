@@ -122,6 +122,7 @@ else if(member.position === 'defender') {
     backgroundColor = 'cyan' }
 
 
+
 card.style.backgroundColor = backgroundColor 
 
 
