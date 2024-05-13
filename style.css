@@ -25,3 +25,24 @@ font-size: 30px;
     font-family: "Grandiflora One", cursive;
     font-weight: 900;
 }
+
+
+footer{
+    background-color: rgb(255, 255, 255);
+    color: #0128C8;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+
+  }
+  .plswork{
+    font-family: 'Homemade Apple', cursive;
+  }
+  p{
+    font-family: 'Englebert', cursive;
+    margin: 0;
+  }
+  a{
+    color: #C80101;
+    font-family: 'Englebert', cursive;
+  }
