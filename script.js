@@ -147,7 +147,7 @@ function generateTeamCards() {
                 <div class="card-header text-center" style="border-color: ${borderColor};">${member.name}</div>
                 <div class="card-body">
                     <img class="img-fluid" src="${member.img}">
-                    <p> <span class="boldtry">Position:</span> ${member.position}</p>
+                    <p><strong>Position:</strong> ${member.position}</p>
                     <p><strong>Skills:</strong> ${member.skills.join(', ')}</p>
                     <p><strong>Strengths:</strong> ${member.strengths}</p>
                     <p><strong>Weaknesses:</strong> ${member.weaknesses}</p>
