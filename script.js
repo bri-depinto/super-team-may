@@ -104,56 +104,60 @@ const teamMembers = [
 
 ]
 function generateTeamCards() {
-    const teamCardsContainer = document.getElementById('teamCards')
+    const teamCardsContainer = document.getElementById('teamCards');
     teamMembers.forEach(member => {
-        const card = document.createElement('div')
-        card.classList.add('col-md-4')
+        const card = document.createElement('div');
+        card.classList.add('col-md-4');
 
-        // styling card based on positon
-let backgroundColor
+        // Define background color based on position
+        let backgroundColor;
 
-if(member.position === 'forward') {
-    backgroundColor = 'pink'
-} else if(member.position === 'midfielder') {
-    backgroundColor = 'blue'
-} else if(member.position === 'goalie') {
-    backgroundColor = 'purple' }
-else if(member.position === 'defender') {
-    backgroundColor = 'cyan' }
+        if (member.position === 'forward') {
+            backgroundColor = 'pink';
+        } else if (member.position === 'midfielder') {
+            backgroundColor = 'blue';
+        } else if (member.position === 'goalie') {
+            backgroundColor = 'purple';
+        } else if (member.position === 'defender') {
+            backgroundColor = 'cyan';
+        }
 
+        card.style.backgroundColor = backgroundColor;
 
-
-card.style.backgroundColor = backgroundColor 
-
-
-
-
-
-
-
-
-
-// create a list of skils with <li> tags
-
-const skillsList = member.skills.map(skill => `<li> ${skill} </li>`).join('')
+        // Apply border color to the card-header
+        let borderColor;
+        switch (member.position) {
+            case 'forward':
+                borderColor = 'pink';
+                break;
+            case 'midfielder':
+                borderColor = 'green';
+                break;
+            case 'goalie':
+                borderColor = 'orange';
+                break;
+            case 'defender':
+                borderColor = 'yellow';
+                break;
+            default:
+                borderColor = 'black';
+        }
         card.innerHTML = `
-            <div class = "card h-100 ">
-                <div class = "card-header"> ${member.name} </div>
-                <div class = "card-body">
-                <img class="img-fluid" src="${member.img}">
+            <div class="card h-100">
+                <div class="card-header" style="border-color: ${borderColor};">${member.name}</div>
+                <div class="card-body">
+                    <img class="img-fluid" src="${member.img}">
                     <p><strong>Position:</strong> ${member.position}</p>
-                    <p><strong>Skills:</strong>
-                        ${skillsList}
-                    </p>
+                    <p><strong>Skills:</strong> ${member.skills.join(', ')}</p>
                     <p><strong>Strengths:</strong> ${member.strengths}</p>
                     <p><strong>Weaknesses:</strong> ${member.weaknesses}</p>
                     <p><strong>Biography:</strong> ${member.biography}</p>
-        `
+                </div>
+            </div>
+        `;
 
-        teamCardsContainer.appendChild(card)
-    })
-
-
+        teamCardsContainer.appendChild(card);
+    });
 }
 
-window.onload = generateTeamCards()
+window.onload = generateTeamCards();
