@@ -1,12 +1,27 @@
 body{
     background-color: black;
 }
+.headerr{
+   color: white;
+   font-size: 50px;
+   font-family: "Titan One", sans-serif;
+   font-weight:100;
+   font-style: normal;
+}
 .card{
     background-color: rgb(197, 197, 197);
+    font-family: "Grandiflora One", cursive;
 }
 .card-header{
 color: rgb(255, 255, 255);
 background-color: black;
-border: dotted 5px;
+border: double 5px;
+border-radius: 50px;
+font-family: "Gluten", cursive;
+font-size: 30px;
+  }
 
+.boldtry{
+    font-family: "Grandiflora One", cursive;
+    font-weight: 900;
 }

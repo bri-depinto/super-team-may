@@ -113,13 +113,13 @@ function generateTeamCards() {
         let backgroundColor;
 
         if (member.position === 'forward') {
-            backgroundColor = 'pink';
+            backgroundColor = '#0128C8';
         } else if (member.position === 'midfielder') {
-            backgroundColor = 'blue';
+            backgroundColor = 'white';
         } else if (member.position === 'goalie') {
-            backgroundColor = 'purple';
+          backgroundColor = 'pink'
         } else if (member.position === 'defender') {
-            backgroundColor = 'cyan';
+            backgroundColor = '#C80101';
         }
 
         card.style.backgroundColor = backgroundColor;
@@ -128,26 +128,26 @@ function generateTeamCards() {
         let borderColor;
         switch (member.position) {
             case 'forward':
-                borderColor = 'pink';
+                borderColor = '#0128C8';
                 break;
             case 'midfielder':
-                borderColor = 'green';
+                borderColor = 'white';
                 break;
             case 'goalie':
-                borderColor = 'orange';
+                borderColor = 'pink';
                 break;
             case 'defender':
-                borderColor = 'yellow';
+                borderColor = '#C80101';
                 break;
             default:
                 borderColor = 'black';
         }
         card.innerHTML = `
             <div class="card h-100">
-                <div class="card-header" style="border-color: ${borderColor};">${member.name}</div>
+                <div class="card-header text-center" style="border-color: ${borderColor};">${member.name}</div>
                 <div class="card-body">
                     <img class="img-fluid" src="${member.img}">
-                    <p><strong>Position:</strong> ${member.position}</p>
+                    <p> <span class="boldtry">Position:</span> ${member.position}</p>
                     <p><strong>Skills:</strong> ${member.skills.join(', ')}</p>
                     <p><strong>Strengths:</strong> ${member.strengths}</p>
                     <p><strong>Weaknesses:</strong> ${member.weaknesses}</p>
