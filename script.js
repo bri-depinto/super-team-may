@@ -117,7 +117,7 @@ function generateTeamCards() {
         } else if (member.position === 'midfielder') {
             backgroundColor = 'white';
         } else if (member.position === 'goalie') {
-          backgroundColor = 'pink'
+          backgroundColor = '#00AEFF'
         } else if (member.position === 'defender') {
             backgroundColor = '#C80101';
         }
@@ -134,7 +134,7 @@ function generateTeamCards() {
                 borderColor = 'white';
                 break;
             case 'goalie':
-                borderColor = 'pink';
+                borderColor = '#00AEFF';
                 break;
             case 'defender':
                 borderColor = '#C80101';
