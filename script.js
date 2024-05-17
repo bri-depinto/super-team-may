@@ -3,10 +3,10 @@ const teamMembers = [
         img: 'imgs/hope.jpg',
         name: 'Hope Solo',
         position: 'goalie',
-        skills: ['dribbiling', 'shooting', 'passing'],
-        strengths: 'ball control',
-        weaknesses: 'heading ability',
-        biography: 'bllllahhh',
+        skills: ['shot-stopping', 'distribution', 'physicality'],
+        strengths: 'communication, leadership, confidence',
+        weaknesses: 'temperament',
+        biography: 'Hope Solo, born on July 30, 1981, in Richland, Washington, rose to prominence as one of the most accomplished goalkeepers in the history of womens soccer. Raised in a sports-oriented family, Solo excelled in soccer from a young age, displaying remarkable athleticism and talent between the goalposts.',
     },
 
     {
