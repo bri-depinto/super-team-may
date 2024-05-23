@@ -59,10 +59,10 @@ const teamMembers = [
         img: 'imgs/rose.jpeg',
         name: 'Rose Lavelle',
         position: 'midfielder',
-        skills: ['dribbiling', 'shooting', 'passing'],
+        skills: ['shooting t`echnique', 'shooting', 'passing'],
         strengths: 'ball control',
         weaknesses: 'heading ability',
-        biography: 'bllllahhh',
+        biography: 'Rose Lavelle, born on May 14, 1995, in Cincinnati, Ohio, is a highly skilled and creative midfielder in womens soccer, known for her technical ability, vision, and flair on the field. Lavelles soccer journey began in her hometown, where she excelled at the youth level and quickly gained recognition for her talent and potential.  ',
     },
     {
         img: 'imgs/emily.jpeg',
