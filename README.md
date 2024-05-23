@@ -1,0 +1,1 @@
+Discover the best players on the USWNT soccer team, with information about them, their strenghts, skills, and weaknesses. Information is displayed by using objects in javascript to mock the look of a card.
